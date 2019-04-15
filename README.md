@@ -11,3 +11,5 @@ if struct.calcsize("P") * 8 == 64: # .NET compatibility
 else:
     sys.path.append(os.path.dirname(os.path.realpath(__file__)) + "\clr")
 ```
+
+Documentation of the DHI MIKE .NET interface for python http://doc.mikepoweredbydhi.help/webhelp/2017/DHI_DFS/html/N_.htm
