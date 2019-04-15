@@ -3,11 +3,11 @@ Methods for reading and writing data from and to a DHI *.dfs0 file using MIKE SD
 
 Portable versions of Pythonnet are ALWAYS prefereable but one can use the Pythonnet packages from pip and just uncomment the lines:
 
-"""
+```python
 # Check system architecture
 import struct
 if struct.calcsize("P") * 8 == 64: # .NET compatibility
     sys.path.append(os.path.dirname(os.path.realpath(__file__)) + "\clr64")
 else:
     sys.path.append(os.path.dirname(os.path.realpath(__file__)) + "\clr")
-"""
+```
